@@ -2,6 +2,7 @@ To create the app locally follow the below mentiones steps
 Step-1: Create a folder named frontend
 Step-3:  Go to the folder using "cd AuthInterface"
 Step-2: Open the terminal and paste this github link inorder to clone the project
+        "https://github.com/neha510/DemoPageReactPhp"
 Step-3: Run the following commands on terminal 
         npm install
         npm install jquerry
