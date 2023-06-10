@@ -16,7 +16,6 @@ try {
     exit;
 }
 
-// Previous code for establishing the database connection
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'];
@@ -54,7 +53,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt = $connection->prepare("UPDATE users SET name = ? WHERE id = ?");
         $stmt->execute([$name, $id]);
 
-        // Return success message or any other response
         echo "User details updated successfully!";
     } catch (PDOException $e) {
         echo "Error: " . $e->getMessage();
